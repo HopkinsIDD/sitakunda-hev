@@ -1,7 +1,7 @@
 source(here("code", "R", "functions.R"))
 
 # read in the data and the model fits
-dfR1 <- readRDS(here("data", "reshaped_stanR1.rds"))
+dfR1 <- read_csv(here("data", "reshaped_stanR1.csv"))
 cat1a <- readRDS(here("generated_data", "model_fits", "summaries", "1a.rds"))
 cat2a <- readRDS(here("generated_data", "model_fits", "summaries", "2a.rds"))
 cat3a <- readRDS(here("generated_data", "model_fits", "summaries", "3a.rds"))

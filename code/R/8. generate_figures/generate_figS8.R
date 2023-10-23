@@ -1,5 +1,5 @@
 # generate figure 2 for manuscript
-source("code/R/functions.R")
+source(here("code", "R", "functions.R"))
 
 # read in empirical estimates
 sc <- readRDS("generated_data/empirical/sc.rds")

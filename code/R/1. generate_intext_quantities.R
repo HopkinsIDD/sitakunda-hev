@@ -5,7 +5,7 @@
 source(here("code","R","functions.R"))
 
 # read in the data
-df <- readRDS(here("data", "merged_clean.rds"))
+df <- read_csv(here("data", "merged_clean.csv"))
 
 # range of follow-up times #####################################################
 range(df$time_in_study, na.rm = T)

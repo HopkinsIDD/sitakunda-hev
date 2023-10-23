@@ -1,7 +1,7 @@
 source(here("code", "R", "functions.R"))
 
 ## read in clean data
-df_hh <- readRDS(here("data", "merged_clean.rds"))
+df_hh <- read_csv(here("data", "merged_clean.csv"))
 
 data_m1 <- df_hh %>% 
   filter(serostatus_r1_ud == "positive" | serostatus_r1_ud == "negative")

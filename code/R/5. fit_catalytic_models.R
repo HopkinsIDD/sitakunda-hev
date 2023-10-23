@@ -1,7 +1,7 @@
 source(here("code", "R", "functions.R"))
 
 # read in the cross-sectional seroprevalence data from baseline
-dfR1 <- readRDS(here("data", "reshaped_stanR1.rds"))
+dfR1 <- read_csv(here("data", "reshaped_stanR1.csv"))
 
 # read in empirical estimates of seroreversion rate (sigma) for children and adults
 # sr_posterior_a <- (rstan::extract(readRDS("generated_data/empirical/sr_posterior_a10.rds")))$sigma
@@ -174,7 +174,7 @@ for(i in 1:(length(age0_c))){
 # Fit best fitting model to follow-up data #
 ############################################
 
-dfR3 <- readRDS(here("data", "reshaped_stanR3.rds"))
+dfR3 <- read_csv(here("data", "reshaped_stanR3.csv"))
 
 # MODEL 2b: age-varying FoI, seroreversion based on empirical measures in <10 and >10 yr-olds
 age_foi_c <- seq(12, 36, 2)

@@ -3,7 +3,7 @@
 source(here("code", "R", "functions.R"))
 
 # read in data (each row is an individual)
-id <- readRDS(here("data", "merged_clean.rds"))
+id <- read_csv(here("data", "merged_clean.csv"))
 
 # summarise by household
 hh_sum <- hh_summarise(id)

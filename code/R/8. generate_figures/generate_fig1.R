@@ -1,7 +1,7 @@
 # generate figure 1
 source(here("code", "R", "functions.R"))
 
-hev <- readRDS(here("data", "merged_clean.rds"))
+hev <- read_csv(here("data", "merged_clean.csv"))
 
 # save the image file path to the smoothed seroprevalence map
 map <- here("figs/Fig1_map.png")

@@ -1,7 +1,7 @@
 source(here("code", "R", "functions.R"))
 
 # read in data
-hev <- readRDS(here("data", "merged_clean.rds"))
+hev <- read_csv(here("data", "merged_clean.csv"))
 
 # label people by status (stable/converters/reverters)
 hev <- hev %>% filter(!is.na(seroconverted_ud)) %>%

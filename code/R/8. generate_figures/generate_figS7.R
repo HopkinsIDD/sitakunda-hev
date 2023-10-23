@@ -4,7 +4,7 @@
 source(here("code", "R", "functions.R"))
 
 # read in the data
-df <- readRDS(here("data", "merged_clean.rds"))
+df <- read_csv(here("data", "merged_clean.csv"))
 
 
 # plot seroprevalence by age, by round
