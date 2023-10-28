@@ -15,8 +15,8 @@ You will need to load the library “here” to create the relative file paths n
 Packages used are within the `dependencies.R` file
 
 ### Data:
-* The file `merged_clean.rds` contains the data collected through the serosurvey
-* The files `reshaped_stanR1.rds` and `reshaped_stanR3.rds` contains the age-stratified seroprevalence data in the format required for catalytic model fitting in rstan
+* The file `merged_clean.csv` contains the data collected through the serosurvey
+* The files `reshaped_stanR1.csv` and `reshaped_stanR3.csv` contains the age-stratified seroprevalence data in the format required for catalytic model fitting in rstan
 * The shapefiles folder contains the geographical shapefiles for spatial boundaries of Bangladesh at admin level 0-4 sourced from https://data.humdata.org/ and used to visualise the spatial data.
 
 ### Code:
